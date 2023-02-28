@@ -2213,20 +2213,77 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         bgcolor("pink");
         bob.penColor("red");
         bob.width(5);
+        bob.speed(0.15);
         Turtle tom = new Turtle();
         tom.penColor("red");
         tom.width(5);
+        tom.speed(0.15);
+        Turtle pond = new Turtle(0,75);
+        pond.penColor("brown");
+        pond.width(5);
+        Turtle nick = new Turtle(0,75);
+        nick.penColor("brown");
+        nick.width(5);
         bob.left(140);
         bob.forward(113);
         tom.right(140);
         tom.backward(113);
+        pond.right(45);
+        pond.forward(110);
+        nick.right(45);
+        nick.forward(110);
+        nick.penColor("white");
+        nick.right(90);
+        nick.forward(25);
+        nick.left(135);
+        nick.forward(36);
+        nick.left(90);
+        nick.forward(36);
+        nick.left(135);
+        nick.forward(25);
+        pond.left(90);
+        pond.forward(5);
+        pond.left(90);
+        pond.forward(110);
+        pond.penColor("pink");
+        pond.forward(122);
+        pond.penColor("brown");
+        pond.forward(25);
+        pond.left(90);
+        pond.forward(5);
+        pond.left(90);
+        pond.forward(27);
+        pond.backward(27);
+        pond.penColor("white");
+        pond.left(45);
+        pond.backward(15);
+        pond.right(45);
+        pond.backward(30);
+        pond.left(45);
+        pond.forward(18);
+        pond.left(90);
+        pond.forward(18);
+        pond.right(135);
+        pond.forward(30);
+        pond.right(45);
+        pond.forward(18);
+        pond.left(45);
+        pond.backward(28);
+
+
+
+
+
+
+
+
         for(int i=0;i<200;i++){
             bob.right(1);
             bob.forward(1);
             tom.left(1);
             tom.backward(1);
         }
-        
+
     }
 
     /**
